@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Practice">
+  
+  <Listeners>
+  <Listener class-name = "testNG.Listeners"/>
+  
+  </Listeners>
+  
+  <parameter name="URL" value="https://test-cca.clopay.com/login"/>
+  <test thread-count="5" name="Framework1">
+  <parameter name="URL" value="https://test-iam.clopay.com/login"/>
+    <classes>
+      <class name="testNG.New1"/>
+      <class name = "testNG.New2"/>
+      <class name = "testNG.New4">
+      	<methods>
+      		<include name="LearnAPI"/>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+  
+  
+  <test name = "Framework2">
+  <parameter name="URL" value="https://test-mydoor3.clopay.com/residential/quotes"/>
+  <parameter name="Key/Username" value="123456"/>
+  	<classes>
+  		<class name="testNG.New3"/>
+  	</classes>
+  
+  </test> 
+</suite> 
