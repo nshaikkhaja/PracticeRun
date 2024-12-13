@@ -5,10 +5,12 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-public class Test10 {
+public class RunClopay {
 
-	public static void main(String[] args) throws InterruptedException {
+	@Test
+	public void testmethod() {
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -18,7 +20,7 @@ public class Test10 {
 		driver.findElement(By.cssSelector("#txtUsername")).sendKeys("evokeuser");
 		driver.findElement(By.cssSelector("#txtPassword")).sendKeys("Welcome@1234");
 		driver.findElement(By.cssSelector("#btnSignIn")).click();
-		driver.close();
+		//driver.close();
 		
 		
 	}

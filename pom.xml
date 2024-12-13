@@ -35,6 +35,22 @@
           <target>1.8</target>
         </configuration>
       </plugin>
+      <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>Clopay.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<properties>
+						<property>
+							<name>suitethreadpoolsize</name>
+							<value>40</value>
+						</property>
+					</properties>
+				</configuration>
+			</plugin>
     </plugins>
   </build>
 </project>

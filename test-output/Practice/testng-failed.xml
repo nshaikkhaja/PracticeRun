@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Practice]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Framework1(failed)">
+  <test thread-count="5" name="Clopay(failed)">
     <classes>
-      <class name="testNG.New2">
+      <class name="practice.RunClopay">
         <methods>
-          <include name="Demo"/>
+          <include name="testmethod"/>
         </methods>
-      </class> <!-- testNG.New2 -->
+      </class> <!-- practice.RunClopay -->
     </classes>
-  </test> <!-- Framework1(failed) -->
-  <test thread-count="5" name="Framework2(failed)">
-    <classes>
-      <class name="testNG.New3">
-        <methods>
-          <include name="LearnOOPS"/>
-          <include name="bfSuite"/>
-          <include name="LoginDetails"/>
-        </methods>
-      </class> <!-- testNG.New3 -->
-    </classes>
-  </test> <!-- Framework2(failed) -->
+  </test> <!-- Clopay(failed) -->
 </suite> <!-- Failed suite [Practice] -->
